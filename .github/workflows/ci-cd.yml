@@ -1,8 +1,8 @@
 name: CI/CD Pipeline
 on:
-    push:
-    pull_request:
-    workflow_dispatch:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build dockerfile
-        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USERNAME }}/employee-service:latest
+        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USERNAME}}/employee-service:latest
 
       - name: Push to dockerhub
         uses: docker/login-action@v3.0.0
