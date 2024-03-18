@@ -29,7 +29,7 @@ def test_update_employee_age(employee: EmployeeIn = employee):
                               'surname': employee.surname,
                               'age': employee.age,
                               'phone': employee.phone,
-                              'id': employee.id
+                              'id': employee_upd.id
                               }
 
 
@@ -44,5 +44,5 @@ def test_update_cast_genre(employee: EmployeeIn = employee):
                               'surname': employee.surname,
                               'age': employee.age,
                               'phone': employee.phone,
-                              'id': employee.id
+                              'id': employee_upd.id
                               }
