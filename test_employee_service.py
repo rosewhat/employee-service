@@ -36,8 +36,9 @@ def test_update_employee_age(employee: EmployeeIn = employee):
 def test_update_cast_genre(employee: EmployeeIn = employee):
     employee_upd = EmployeeOut(
         name=employee.name,
-        nationality=employee.surname,
+        surname=employee.surname,
         age=employee.age,
+        phone = employee.phone,
         id=1
     )
     assert dict(employee_upd) == {'name': employee.name,
