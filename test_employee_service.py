@@ -16,7 +16,7 @@ def test_create_employee(employee: EmployeeIn = employee):
                               'phone': employee.phone
                               }
 
-'''
+
 def test_update_employee_age(employee: EmployeeIn = employee):
     employee_upd = EmployeeOut(
         name='Anton',
@@ -25,19 +25,24 @@ def test_update_employee_age(employee: EmployeeIn = employee):
         phone='+7123456789',
         id=1
     )
-    assert dict(employee_upd) == {'name': cast.name,
-                              'nationality': cast.nationality,
-                              'id': cast_upd.id
+    assert dict(employee_upd) == {'name': employee.name,
+                              'surname': employee.surname,
+                              'age': employee.age,
+                              'phone': employee.phone,
+                              'id': employee.id
                               }
 
 
 def test_update_cast_genre(employee: EmployeeIn = employee):
-    cast_upd = EmployeeOut(
-        name=cast.name,
-        nationality=cast.nationality,
+    employee_upd = EmployeeOut(
+        name=employee.name,
+        nationality=employee.surname,
+        age=employee.age,
         id=1
     )
-    assert dict(cast_upd) == {'name': cast.name,
-                              'nationality': cast.nationality,
-                              'id': cast_upd.id}
-'''
+    assert dict(employee_upd) == {'name': employee.name,
+                              'surname': employee.surname,
+                              'age': employee.age,
+                              'phone': employee.phone,
+                              'id': employee.id
+                              }

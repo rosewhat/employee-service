@@ -18,7 +18,7 @@ app = FastAPI(openapi_url="/api/v1/employees/openapi.json", docs_url="/api/v1/em
 KEYCLOAK_URL = "http://keycloak:8080/"
 KEYCLOAK_CLIENT_ID = "testClient"
 KEYCLOAK_REALM = "testRealm"
-KEYCLOAK_CLIENT_SECRET = "m4U4VqaAATxEBr39Xe3pCz7afiGgJv0J"
+KEYCLOAK_CLIENT_SECRET = "CXG7rPAx1eET6vSb3E8jnSa810Gf8m8E"
 
 user_token = ""
 keycloak_openid = KeycloakOpenID(server_url=KEYCLOAK_URL,
