@@ -21,7 +21,7 @@ def test_update_employee_age(employee: EmployeeIn = employee):
     employee_upd = EmployeeOut(
         name='Anton',
         surname='Russian',
-        age='22',
+        age='21',
         phone='+7123456789',
         id=1
     )
